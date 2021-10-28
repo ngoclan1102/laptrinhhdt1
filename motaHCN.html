@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="rectangle" height="500" width="200"></canvas>
+<script>
+    let a = document.getElementById("rectangle");
+    let cxt = a.getContext("2d");
+    cxt.fillStyle = "#ff8800";
+    cxt.fillRect(0 , 0 ,150, 75);
+    class Rectangle {
+        ChieuDai;
+        ChieuRong;
+        constructor(ChieuDai,ChieuRong) {
+            this.ChieuDai=ChieuDai;
+            this.ChieuRong=ChieuRong;
+        }
+        getChieuDai() {
+            return this.ChieuDai;
+        }
+        setChieuDai() {
+            return this.ChieuDai;
+        }
+        getChieuRong() {
+            return this.ChieuRong;
+        }
+        setChieuRong() {
+            return this.ChieuRong;
+        }
+        getDienTich() {
+            return this.ChieuDai * this.ChieuRong;
+        }
+        getChuVi() {
+            return (this.ChieuDai + this.ChieuRong) * 2;
+        }
+    }
+    let Number = new Rectangle(5,2)
+    alert('HCN co chieu dai la : ' + Number.getChieuDai() + ' va chieu rong la : ' + Number.getChieuRong());
+    alert('HCN co dien tich la : ' + Number.getDienTich() + ' va chu vi la : ' + Number.getChuVi());
+    // Number.setChieuRong(5);
+    // Number.setChieuDai(8);
+    // alert('HCN co chieu dai la : ' + Number.getChieuDai() + ' va chieu rong la : ' + Number.getChieuRong());
+    // alert('HCN co dien tich la : ' + Number.getDienTich() + ' va chu vi la : ' + Number.getChuVi());
+</script>
+</body>
+</html>

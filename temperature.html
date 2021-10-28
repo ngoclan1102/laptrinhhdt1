@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        DoC;
+        constructor(DoC) {
+            this.DoC=DoC;
+        }
+        getDoC() {
+            return this.DoC;
+        }
+        getDoF() {
+            return 1.8*this.getDoC()+32;
+        }
+        getDoKevin() {
+            return this.getDoC()+273.15;
+        }
+    }
+    let MyTemperature = new Temperature(25);
+    alert(MyTemperature.getDoC()+' do C '+' bang '+MyTemperature.getDoF()+' do F va bang '+MyTemperature.getDoKevin()+' do Kevin' )
+</script>
+</body>
+</html>
